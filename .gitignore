@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*.bak
+.venv/
+venv/
+*.egg-info/
+
+# 环境与密钥
+.env
+.env.*
+!.env.example
+
+# 数据集（超大，不入库）
+100种中药分类数据集/
+
+# 训练输出与结果
+runs/
+results/
+uploads/
+.uploads/
+
+# 前端依赖与构建产物
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# IDE 与系统
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.lnk
+
+# WorkBuddy 内部数据
+.workbuddy/
+
+# 论文与过程文档（不公开，避免查重泄露）
+毕业论文*
+毕业设计论文*
+论文设计报告/
+_final_refs.docx
+~$*.docx
+build_thesis.mjs
+inject_pgnum.ps1
+test.zip
+
+# 前端开发过程报告
+frontend/*report*.md
+frontend/*完成报告*.md
+
+# 旧版原生前端（已废弃，被 Vue3 前端取代）
+static/
+templates/
+
+# 开发过程报告（内部文档，不公开）
+A1_*.md
+GPU_*.md
+注册功能开发报告.md

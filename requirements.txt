@@ -1,0 +1,20 @@
+# Web 框架
+fastapi
+uvicorn
+python-multipart
+
+# 深度学习（torch 不锁版本：训练环境装 CUDA 版，部署环境可装 CPU 版）
+ultralytics
+torch
+torchvision
+
+# 图像处理
+opencv-python
+numpy
+pillow
+
+# 数据库
+pymysql
+
+# 模板引擎（ultralytics 依赖）
+jinja2

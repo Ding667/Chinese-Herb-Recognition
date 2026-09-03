@@ -1,0 +1,88 @@
+:root {
+  --sidebar-bg: #1f2d3d;
+  --sidebar-width: 240px;
+  --header-height: 60px;
+  --primary: #409eff;
+  --bg-page: #f5f7fa;
+  --bg-card: #ffffff;
+  --radius: 12px;
+  --gap-sm: 16px;
+  --gap-md: 24px;
+  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', Arial, sans-serif;
+  background: var(--bg-page);
+  color: #303133;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 页面容器统一规范：最大宽度 + 居中 + 统一内边距 */
+.page-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: var(--gap-md);
+}
+
+/* 统一卡片外观 */
+.el-card {
+  border-radius: var(--radius) !important;
+  border: 1px solid #ebeef5 !important;
+}
+
+.el-card.is-hover-shadow {
+  box-shadow: var(--shadow-card) !important;
+}
+
+/* 页面标题区 */
+.page-header {
+  margin-bottom: var(--gap-md);
+}
+.page-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #303133;
+}
+.page-sub {
+  font-size: 13px;
+  color: #909399;
+  margin-top: 4px;
+}
+
+/* 卡片标题 */
+.card-title {
+  font-weight: 500;
+  color: #303133;
+}
+
+/* 过渡动画 */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.25s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/* 禁止全局横向滚动 */
+html,
+body {
+  overflow-x: hidden;
+}
